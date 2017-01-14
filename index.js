@@ -29,7 +29,7 @@ app.listen(process.env.PORT || 3000, function(){
     console.log('app listening', process.env.PORT);
 });
 
-app.post('/list/subscribe/news/', function(req, res) {
+app.post('/mail/subscribe/', function(req, res) {
     console.log(req.body)
     var listId = '';
     if (req.body.type === 'student') {
